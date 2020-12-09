@@ -100,6 +100,7 @@ InlineEditor.builtinPlugins = [
 
 InlineEditor.defaultConfig = {
   // Editor configuration.
+  placeholder: 'Add a description',
   toolbar: {
     items: [
       'heading',
@@ -117,13 +118,7 @@ InlineEditor.defaultConfig = {
       'indent',
       'outdent',
       'alignment',
-      '|',
       'code',
-      'MathType',
-      'ChemType',
-      'specialCharacters',
-      'superscript',
-      'subscript',
       '|',
       'insertTable',
       'imageUpload',
@@ -132,6 +127,12 @@ InlineEditor.defaultConfig = {
       '|',
       'undo',
       'redo',
+      '|',
+      'MathType',
+      'ChemType',
+      'specialCharacters',
+      'superscript',
+      'subscript',
     ],
   },
   image: {
