@@ -97,6 +97,7 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-ui": "^23.1.0"
+    "@ckeditor/ckeditor5-ui": "^23.1.0",
+    "@ckeditor/ckeditor5-upload": "^23.1.0"
   }
 }

@@ -10,11 +10,14 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import Autolink from '@ckeditor/ckeditor5-link/src/autolink.js';
 import Autosave from '@ckeditor/ckeditor5-autosave/src/autosave.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
+
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
-import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
+// import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
+// import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
+
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
@@ -57,8 +60,9 @@ InlineEditor.builtinPlugins = [
   Autosave,
   BlockQuote,
   Bold,
-  CKFinder,
-  CKFinderUploadAdapter,
+  // CKFinder,
+  // CKFinderUploadAdapter,
+  SimpleUploadAdapter,
   Code,
   CodeBlock,
   Essentials,
@@ -132,6 +136,19 @@ InlineEditor.defaultConfig = {
   },
   image: {
     toolbar: ['imageStyle:full', 'imageStyle:side', '|', 'imageTextAlternative'],
+  },
+  simpleUpload: {
+    // The URL that the images are uploaded to.
+    uploadUrl: 'http://example.com',
+
+    // Enable the XMLHttpRequest.withCredentials property.
+    withCredentials: true,
+
+    // Headers sent along with the XMLHttpRequest to the upload server.
+    headers: {
+      'X-CSRF-TOKEN': 'CSRF-Token',
+      'Authorization': 'Bearer <JSON Web Token>',
+    },
   },
   table: {
     contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells', 'tableCellProperties', 'tableProperties'],
