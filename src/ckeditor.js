@@ -123,7 +123,7 @@ InlineEditor.defaultConfig = {
       'insertTable',
       'imageUpload',
       'htmlEmbed',
-      'CKFinder',
+      // 'CKFinder',
       '|',
       'undo',
       'redo',
