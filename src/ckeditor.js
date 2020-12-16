@@ -140,16 +140,16 @@ InlineEditor.defaultConfig = {
   },
   simpleUpload: {
     // The URL that the images are uploaded to.
-    uploadUrl: 'http://example.com',
+    uploadUrl: 'https://localhost.prewittridge.net/api/image/binary',
 
-    // Enable the XMLHttpRequest.withCredentials property.
-    withCredentials: true,
+    // // Enable the XMLHttpRequest.withCredentials property.
+    // withCredentials: true,
 
     // Headers sent along with the XMLHttpRequest to the upload server.
-    headers: {
-      'X-CSRF-TOKEN': 'CSRF-Token',
-      'Authorization': 'Bearer <JSON Web Token>',
-    },
+    // headers: {
+    //   'X-CSRF-TOKEN': 'CSRF-Token',
+    //   'Authorization': 'Bearer <JSON Web Token>',
+    // },
   },
   table: {
     contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells', 'tableCellProperties', 'tableProperties'],
