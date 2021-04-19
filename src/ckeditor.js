@@ -141,17 +141,17 @@ InlineEditor.defaultConfig = {
     toolbar: ['imageStyle:full', 'imageStyle:side', '|', 'imageTextAlternative'],
   },
   simpleUpload: {
-    // The URL that the images are uploaded to.
-    uploadUrl: 'http://example.com',
+    // // The URL that the images are uploaded to.
+    // uploadUrl: 'http://example.com',
 
-    // Enable the XMLHttpRequest.withCredentials property.
-    withCredentials: true,
+    // // Enable the XMLHttpRequest.withCredentials property.
+    // withCredentials: true,
 
-    // Headers sent along with the XMLHttpRequest to the upload server.
-    headers: {
-      'X-CSRF-TOKEN': 'CSRF-Token',
-      'Authorization': 'Bearer <JSON Web Token>',
-    },
+    // // Headers sent along with the XMLHttpRequest to the upload server.
+    // headers: {
+    //   'X-CSRF-TOKEN': 'CSRF-Token',
+    //   'Authorization': 'Bearer <JSON Web Token>',
+    // },
   },
   table: {
     contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells', 'tableCellProperties', 'tableProperties'],
