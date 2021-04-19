@@ -49,6 +49,7 @@ import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 
 export default class InlineEditor extends InlineEditorBase {}
 
@@ -96,6 +97,7 @@ InlineEditor.builtinPlugins = [
   TableToolbar,
   TextTransformation,
   Underline,
+  Base64UploadAdapter
 ];
 
 InlineEditor.defaultConfig = {
