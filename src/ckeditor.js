@@ -55,7 +55,6 @@ export default class InlineEditor extends InlineEditorBase {}
 
 // Plugins to include in the build.
 InlineEditor.builtinPlugins = [
-  Base64UploadAdapter,
   Alignment,
   Autoformat,
   Autolink,
@@ -97,7 +96,8 @@ InlineEditor.builtinPlugins = [
   TableProperties,
   TableToolbar,
   TextTransformation,
-  Underline
+  Underline,
+  Base64UploadAdapter
 ];
 
 InlineEditor.defaultConfig = {
@@ -141,13 +141,13 @@ InlineEditor.defaultConfig = {
     toolbar: ['imageStyle:full', 'imageStyle:side', '|', 'imageTextAlternative'],
   },
   simpleUpload: {
-    // // The URL that the images are uploaded to.
-    // uploadUrl: 'http://example.com',
+    // The URL that the images are uploaded to.
+    //uploadUrl: '',
 
     // // Enable the XMLHttpRequest.withCredentials property.
     // withCredentials: true,
 
-    // // Headers sent along with the XMLHttpRequest to the upload server.
+    // Headers sent along with the XMLHttpRequest to the upload server.
     // headers: {
     //   'X-CSRF-TOKEN': 'CSRF-Token',
     //   'Authorization': 'Bearer <JSON Web Token>',
