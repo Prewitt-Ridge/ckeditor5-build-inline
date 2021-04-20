@@ -55,6 +55,7 @@ export default class InlineEditor extends InlineEditorBase {}
 
 // Plugins to include in the build.
 InlineEditor.builtinPlugins = [
+  Base64UploadAdapter,
   Alignment,
   Autoformat,
   Autolink,
@@ -96,8 +97,7 @@ InlineEditor.builtinPlugins = [
   TableProperties,
   TableToolbar,
   TextTransformation,
-  Underline,
-  Base64UploadAdapter
+  Underline
 ];
 
 InlineEditor.defaultConfig = {
